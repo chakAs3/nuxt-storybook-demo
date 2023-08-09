@@ -1,0 +1,20 @@
+{
+	"folders": [
+		{
+			"path": "../../nuxt"
+		},
+		{
+			"path": "."
+		},
+		{
+			"path": "../../devtools"
+		},
+		{
+			"path": "../../sb/storybook"
+		},
+		{
+			"path": "../../nuxt-storybook-init-demo"
+		}
+	],
+	"settings": {}
+}
