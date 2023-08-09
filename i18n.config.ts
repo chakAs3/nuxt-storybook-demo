@@ -1,12 +1,12 @@
 export default defineI18nConfig(() => ({
     legacy: false,
-    locale: 'en',
+    locale: 'fr',
     messages: {
       en: {
-        welcome: 'Welcome'
+        welcome: 'Welcome to Storybook'
       },
       fr: {
-        welcome: 'Bienvenue'
+        welcome: 'Bienvenue a Storybook'
       }
     }
   }))

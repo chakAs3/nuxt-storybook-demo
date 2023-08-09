@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from '@storybook/vue3';
 
 
 
-import MyNuxtWelcome from './MyWelcome.vue'
+import MyNuxtWelcome from '~/components/MyWelcome.vue'
 
 // More on how to set up stories at: https://storybook.js.org/docs/vue/writing-stories/introduction
 
@@ -25,7 +25,5 @@ type Story = StoryObj<typeof meta>;
 export const NuxtWelcomeStory : Story = {
   args: {  },
 }
-export const NuxtWelcome2: Story = {
-  args: {  },
-}
+
 

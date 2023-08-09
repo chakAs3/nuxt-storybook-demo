@@ -13,7 +13,9 @@
   "devDependencies": {
     "@nuxt/devtools": "latest",
     "@nuxtjs/i18n": "8.0.0-rc.2",
-    "@storybook-vue/nuxt": "0.0.1-rc.29",
+    "@nuxt/image": "rc",
+    "@pinia/nuxt": "^0.4.11",
+    "@storybook-vue/nuxt": "link:../../nuxt",
     "@storybook/addon-essentials": "^7.2.2",
     "@storybook/addon-interactions": "^7.2.2",
     "@storybook/addon-links": "^7.2.2",
