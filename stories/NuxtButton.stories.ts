@@ -28,14 +28,14 @@ type Story = StoryObj<typeof meta>;
  */
 
 export const Primary : Story = {
-args: { primary: true , label:'Primary' },
+ args: { primary: true , label:'Primary' },
 }
 
 export const MyStory : Story = { 
-args: { primary: true , label:'My Story' },
-render:(args) => ({
-  components: { MyPre },
-  template: `<my-pre>  Hii</my-pre>`,
-}),
+  args: { primary: true , label:'My Story' },
+  render:(args) => ({
+    components: { MyPre },
+    template: `<my-pre> Hello</my-pre>`,
+  }),
 }
 
