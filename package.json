@@ -8,7 +8,9 @@
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "stub": "pnpm -r --filter=\"../../nuxt\" run stub",
+    "dev:watch": "pnpm run stub && pnpm run storybook dev "
   },
   "devDependencies": {
     "@nuxt/devtools": "latest",

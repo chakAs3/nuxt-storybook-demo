@@ -9,6 +9,12 @@ import MyComponent from '~/components/I18n.vue'
 const meta = {
   title: 'Example/I18n  plugin',
   component: MyComponent,
+  argTypes: {
+
+    lang: { control: 'select', options: ['en', 'fr', 'ar'] },
+   
+  },
+  
   // This component will have an automatically generated docsPage entry: https://storybook.js.org/docs/vue/writing-docs/autodocs
   tags: ['autodocs'],
 
@@ -22,8 +28,16 @@ type Story = StoryObj<typeof meta>;
  * to learn how to use render functions.
  */
 
-export const NuxtI18n : Story = {
+export const FrenchStory : Story = {
+  args: { lang : 'fr' },
+}
+
+export const EnglishStory : Story = {
   args: { lang : 'en' },
+}
+
+export const ArabicStory : Story = {
+  args: { lang : 'ar' },
 }
 
 

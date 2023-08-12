@@ -1,23 +1,32 @@
 <template>
-    <pre>
-        <h1> {{ $t('welcome') }} </h1>
-    </pre>
-    <div> language : {{ lang }}</div>
+    <div class='storybook lang-selector'>
+        <button class='storybook-button storybook-button--small' @click="locale = 'en'">en</button>
+        <button class='storybook-button storybook-button--small' @click="locale = 'fr'">fr</button>
+        <button class='storybook-button storybook-button--small' @click="locale = 'ar'">ar</button>
+    </div>
+    <div class="storybook welcome" :style="{ direction: rtl ? 'rtl':'ltr' }">
+
+
+        
+       <div> {{ t('welcome', { name: 'Storybook' }) }}</div>
+       <div> {{ t('welcome', { name: 'Nuxt' }) }}</div>
+       <div> {{ t('welcome', { name: 'I18n' }) }}</div>
+    </div>
+    
+    <p> language : {{ lang }}</p>
 </template>
 <script lang="ts" setup>
-const {  locale  } = useI18n({
-    locale: 'en',
-    messages: {
-      en: {
-        welcome: 'Hello world!'
-      },
-      fr: {
-        welcome: 'Bonjour le monde!'
-      }
-    }
-  })
+import '../assets/button.css'
+ const { t , locale } = useI18n()
   const props = defineProps<{
-    lang:'en'|'fr'
+    lang:string,
     message?: string,
   }>()
+
+  const rtl = computed(() => props.lang === 'ar')
+  locale.value = props.lang
+  watch(() => props.lang, (lang) => {
+     locale.value = lang
+  })
+
 </script>

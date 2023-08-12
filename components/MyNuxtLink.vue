@@ -1,7 +1,8 @@
 <template>
 
+
   <NuxtLink to="https://nuxt.com">
-    <slot></slot>
+    <slot></slot> 
   </NuxtLink>
 
 </template>

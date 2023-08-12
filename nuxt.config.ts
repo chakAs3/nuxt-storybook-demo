@@ -1,14 +1,14 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   modules: [
-    '/Users/chakir/devs/devtools/local',
-    '@nuxtjs/i18n',
+    // '/Users/chakir/devs/devtools/local',
+    // '@nuxtjs/i18n',
     '@nuxt/image',
     '@pinia/nuxt',
   ],
   i18n: {
-    locales: ['en','fr'],
-    defaultLocale: 'fr'
+    locales: ['en','fr','ar'],
+    defaultLocale: 'en'
   },
  
   runtimeConfig: {
