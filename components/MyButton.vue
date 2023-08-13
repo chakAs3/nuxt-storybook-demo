@@ -1,9 +1,8 @@
 <template>
   <div class="storybook sb-column"> 
-    <h4> NuxtLink  </h4>
-    <MyNuxtLink :class="classes" @click="onClick" :style="style">
-      {{ label }} 
-    </MyNuxtLink>
+    <button :class="classes" @click="onClick" :style="style">
+      {{ label }} <slot></slot>
+    </button>
  </div>
 </template>
 

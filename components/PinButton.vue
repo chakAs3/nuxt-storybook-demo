@@ -1,8 +1,8 @@
 <template>
   <div class="storybook  storybook-button"> 
-    <NuxtLinkLocale class="classes" @click="onClick" :style="style">
+    <MyButton label="" class="classes" @click="onClick" :style="style">
      <slot></slot>
-    </NuxtLinkLocale>
+    </MyButton>
  </div>
 </template>
 
