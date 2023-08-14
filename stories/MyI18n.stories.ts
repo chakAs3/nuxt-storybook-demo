@@ -7,7 +7,7 @@ import MyComponent from '~/components/I18n.vue'
 // More on how to set up stories at: https://storybook.js.org/docs/vue/writing-stories/introduction
 
 const meta = {
-  title: 'Example/I18n  plugin',
+  title: 'Plugins/I18n',
   component: MyComponent,
   argTypes: {
 

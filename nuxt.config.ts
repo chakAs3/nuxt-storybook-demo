@@ -2,7 +2,7 @@
 export default defineNuxtConfig({
   modules: [
     // '/Users/chakir/devs/devtools/local',
-    // '@nuxtjs/i18n',
+    '@nuxtjs/i18n',
     '@nuxt/image',
     '@pinia/nuxt',
   ],
