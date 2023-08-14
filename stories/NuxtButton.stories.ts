@@ -7,7 +7,7 @@ import MyButton from '~/components/MyButton.vue'
 // More on how to set up stories at: https://storybook.js.org/docs/vue/writing-stories/introduction
 const decorators:DecoratorFunction<VueRenderer>[] = []
 const meta = {
-  title: 'Example/NuxtLink Story',
+  title: 'Components/NuxtLink ',
   component: MyButton,
   // This component will have an automatically generated docsPage entry: https://storybook.js.org/docs/vue/writing-docs/autodocs
   tags: ['autodocs'],
@@ -28,14 +28,14 @@ type Story = StoryObj<typeof meta>;
  */
 
 export const Primary : Story = {
-args: { primary: true , label:'Primary' },
+ args: { primary: true , label:'Primary' },
 }
 
 export const MyStory : Story = { 
-args: { primary: true , label:'My Story' },
-render:(args) => ({
-  components: { MyPre },
-  template: `<my-pre>  Hii</my-pre>`,
-}),
+  args: { primary: true , label:'My Story' },
+  render:(args) => ({
+    components: { MyPre },
+    template: `<my-pre> Hello</my-pre>`,
+  }),
 }
 

@@ -7,7 +7,7 @@ import MyComponent from '~/components/MyComposable.vue'
 // More on how to set up stories at: https://storybook.js.org/docs/vue/writing-stories/introduction
 
 const meta = {
-  title: 'Example/Composables Story',
+  title: 'Composables/Use Config ',
   component: MyComponent,
   // This component will have an automatically generated docsPage entry: https://storybook.js.org/docs/vue/writing-docs/autodocs
   tags: ['autodocs'],
@@ -22,8 +22,8 @@ type Story = StoryObj<typeof meta>;
  * to learn how to use render functions.
  */
 
-export const UserConfigComposable : Story = {
-  args: {  },
+export const UseConfigComposable : Story = {
+  args: {},
 }
 
 

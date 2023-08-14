@@ -1,9 +1,5 @@
 import { type Preview } from "@storybook/vue3";
-import { setup } from "@storybook-vue/nuxt";
 
-
-// import { useNuxtApp } from "#app/nuxt";
-// import { u } from "#imports";
 const preview: Preview = {
   parameters: {
     actions: { argTypesRegex: "^on[A-Z].*" },
@@ -16,8 +12,6 @@ const preview: Preview = {
   },
   
 };
-console.log('Preview =============')
-setup((app)=>{
-  console.log(' setup app: ',app)
-})
+console.log('.storybook Preview =============')
+
 export default preview;

@@ -2,12 +2,12 @@ import type { Meta, StoryObj } from '@storybook/vue3';
 
 
 
-import MyComponent from '~/components/MyNuxtImage.vue'
+import MyComponent from '~/pages/about/index.vue'
 
 // More on how to set up stories at: https://storybook.js.org/docs/vue/writing-stories/introduction
 
 const meta = {
-  title: 'Plugins/NuxtImage',
+  title: 'Pages/About ',
   component: MyComponent,
   // This component will have an automatically generated docsPage entry: https://storybook.js.org/docs/vue/writing-docs/autodocs
   tags: ['autodocs'],
@@ -22,8 +22,8 @@ type Story = StoryObj<typeof meta>;
  * to learn how to use render functions.
  */
 
-export const NuxtImage : Story = {
-  args: {  },
+export const AboutPage : Story = {
+  args: { msg: `Storybook ❤️‍🔥 Nuxt ❤️‍🔥 Router` },
 }
 
 
